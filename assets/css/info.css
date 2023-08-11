@@ -1,0 +1,21 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.info__h1 {
+}
+.info__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding-left: 100px;
+  max-width: 800px;
+}
+.info__bottom p {
+  color: #bcbcbc;
+
+  font-size: 24px;
+  line-height: normal;
+}

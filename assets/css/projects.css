@@ -1,0 +1,27 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 93px;
+}
+.projects__h1 {
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 100px;
+}
+.project-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  justify-content: space-between;
+  width: 400px;
+  height: 600px;
+  border-radius: 50px 0px;
+  box-shadow: 0px 0px 12px 0px #fff;
+}
+.project-item__image {
+  width: 100%;
+}

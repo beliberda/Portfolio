@@ -1,0 +1,10 @@
+:root {
+  --back-main: #0f1624;
+  --gradient-tech: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  --text-main: white;
+}
