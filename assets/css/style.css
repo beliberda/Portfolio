@@ -1,4 +1,6 @@
+/* Подключаем шрифты и стили (Такой способ удобен, но не рекомендуется для реальной разработки) */
 @import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@500;600&display=swap");
+/* С помощью импортов можно легко добавлять файлы с разными стилями */
 @import url(./normalize.css);
 @import url(./main.css);
 @import url(./header.css);

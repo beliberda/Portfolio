@@ -1,9 +1,8 @@
+/* Делаем Flex контейнер и указываем направление в колонку */
 .projects {
   display: flex;
   flex-direction: column;
   gap: 60px;
-}
-.projects__h1 {
 }
 .projects-list {
   display: grid;

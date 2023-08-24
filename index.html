@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- тег head не показывается на сайте -->
   <head>
+    <!-- Теги метаданных -->
+    <!-- Кодировка сайта для правильного отображения -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Ширина экрана зависит от ширины устройства с масштабом 1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Подключаем стили -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Подключаем скрипы -->
     <script defer src="./assets/js/index.js"></script>
+    <!-- Заголовок сайта -->
     <title>Frontend-developer portfolio</title>
   </head>
   <body>
+    <!-- Сайт разделяется на 3 части Header Main Footer -->
     <header class="header">
+      <!-- Здесь в шапке сайта 3 блока, с логотипом, с навигацией, с ссылками -->
       <div class="header-logo">
+        <!-- Svg элементы можно вставлять как просто кодом, так и в теге img -->
         <img src="./assets/images/logo.svg" alt="" class="header-logo__img" />
         <h2 class="header-title">Portfolio</h2>
       </div>
+      <!-- Тег nav семантически нужен для обозначения навигации сайта -->
       <nav class="header-nav">
-        <a href="/"><li class="header-nav__item">Projects</li></a>
-        <a href="/"><li class="header-nav__item">Technologies</li></a>
-        <a href="/"><li class="header-nav__item">About me</li></a>
+        <li class="header-nav__item"><a href="/">Projects</a></li>
+        <li class="header-nav__item"><a href="/">Technologies</a></li></a>
+        <li class="header-nav__item"><a href="/">About me</a></li></a>
       </nav>
       <div class="social-link">
         <a href="">
@@ -43,6 +54,8 @@
         </a>
       </div>
     </header>
+    <!-- Главный блок main с контентом разделяется еще на секции с тегами section -->
+    <!-- Здесь указывается дополнительный класс container для отступов от краев -->
     <main class="main container">
       <section class="info">
         <h1 class="info__h1">Информация</h1>
@@ -51,18 +64,23 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+          <!-- Кнопка также должна задаваться через тег button -->
           <button>Let’s begin</button>
         </div>
       </section>
       <section class="projects">
         <h1 class="projects__h1">Проекты</h1>
+        <!-- Проекты задаются динамически с помощью JavaScript-->
+        <!-- Тут задается id для элемента, чтобы к нему было просто обратиться в js, хотя можно и просто с классом -->
         <ul id="project-list" class="projects-list"></ul>
       </section>
       <section class="technology">
-        <h1 class="technology-title">Технологии</h1>
+        <h1 class="technology-h1">Технологии</h1>
+        <!-- Технологии задаются динамически с помощью JavaScript -->
         <ul class="technology-list"></ul>
       </section>
     </main>
+    <!-- И последний блок footer, в нем должны быть контактные данные, какие-либо ссылки, лицензия(если есть) -->
     <footer class="footer"><h1>footer</h1></footer>
   </body>
 </html>
