@@ -10,20 +10,20 @@ projectMass = [
     },
     {
         image: './assets/images/project.png',
-        title: 'Parallax3D',
-        text:'Site with 3D Effect, rain and relax music',
+        title: 'Бункер',
+        text:'Генератор персонажей для настольной игры Бункер',
         link:'https://beliberda.github.io/Parallax3D/'
     },
     {
         image: './assets/images/project.png',
-        title: 'Parallax3D',
-        text:'Site with 3D Effect, rain and relax music',
+        title: 'Мафия',
+        text:'Сайт для распределения ролей в игре "Мафия"',
         link:'https://beliberda.github.io/Parallax3D/'
     },
     {
         image: './assets/images/project.png',
-        title: 'Parallax3D',
-        text:'Site with 3D Effect, rain and relax music',
+        title: 'Fukuro',
+        text:'Сайт продажи авто из Японии',
         link:'https://beliberda.github.io/Parallax3D/'
     },
 ]

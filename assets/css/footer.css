@@ -5,6 +5,7 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-top: 2px solid #b8b8b876;
 }
 .footer-contacts {
   display: flex;
@@ -13,5 +14,13 @@
 }
 .footer-contacts a {
   color: var(--text-main);
-  font-size: 20px;
+  font-size: 16px;
+  border-bottom: 2px solid #b8b8b800;
+  padding-bottom: 5px;
+  margin-bottom: -7px;
+  width: max-content;
+  transition: 0.3s;
+}
+.footer-contacts a:hover {
+  border-bottom: 2px solid #b8b8b8;
 }

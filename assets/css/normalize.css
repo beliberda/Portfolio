@@ -33,13 +33,15 @@ body {
 /* Задаем тегу а отсутствие подчеркивания */
 a {
   text-decoration: none;
+  color: inherit;
 }
 /* Для текстовых тегов указываем стили, которые дублируются */
 h1,
 h2,
 h3,
 h4,
-p {
+p,
+a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -47,27 +49,34 @@ p {
 }
 /* Настраиваем отдельно размеры */
 h1 {
-  font-size: 48px;
+  font-size: 32px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 /* Кнопке также задаем высоту, фон, закругление, убираем границу  */
 button {
   background: var(--gradient-tech);
-  height: 60px;
+  height: 40px;
   border-radius: 83px;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--text-main);
-  padding: 0 60px;
+  padding: 0 40px;
   /* Свойство, чтобы менялся курсор на указатель */
   cursor: pointer;
+  transition: 0.3s;
 }
-
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  transform: scale(0.9);
+  transition: 0.1s;
+}
 ul,
 li {
   /* Убираем стиль оформления списка, чтобы точек не было */
@@ -103,7 +112,4 @@ hr {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-a {
-  color: inherit;
 }
