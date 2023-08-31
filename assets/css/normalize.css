@@ -73,9 +73,11 @@ li {
   /* Убираем стиль оформления списка, чтобы точек не было */
   list-style: none;
 }
+
 main {
   display: flex;
   flex-direction: column;
+
   /* Расстояние между секция в main */
   gap: 100px;
   /* Отступ всерху и снизу */
@@ -92,8 +94,15 @@ hr {
 
 .container {
   /* Дополнительный класс для обозначения отступов слева и справа от краев страницы */
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: calc((100vw - 1180px) / 2);
+  padding-right: calc((100vw - 1180px) / 2);
+}
+@media (max-width: 1024px) {
+  .container {
+    /* Дополнительный класс для обозначения отступов слева и справа от краев страницы */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 a {
   color: inherit;

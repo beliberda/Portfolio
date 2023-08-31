@@ -19,6 +19,7 @@
   width: 400px;
   height: 600px;
   border-radius: 50px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: 0.2s;
 }
 .project-item__image {
@@ -26,4 +27,9 @@
 }
 .project-item:hover {
   box-shadow: 0px 0px 12px 0px #fff;
+}
+@media (max-width: 1024px) {
+  .projects-list {
+    padding: 0;
+  }
 }
