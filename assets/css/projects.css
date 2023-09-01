@@ -31,5 +31,11 @@
 @media (max-width: 1024px) {
   .projects-list {
     padding: 0;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .projects-list {
+    grid-template-columns: 1fr;
   }
 }

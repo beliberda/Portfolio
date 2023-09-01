@@ -40,3 +40,9 @@
   display: flex;
   gap: 31px;
 }
+@media (max-width: 768px) {
+  .header-nav,
+  .social-link {
+    display: none;
+  }
+}
