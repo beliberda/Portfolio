@@ -74,7 +74,7 @@ button:hover {
   transform: scale(1.1);
 }
 button:active {
-  transform: scale(0.9);
+  transform: scale(1);
   transition: 0.1s;
 }
 ul,
@@ -95,7 +95,7 @@ main {
 }
 hr {
   /* Настраиваем линию */
-  width: 300px;
+  width: 60%;
   background: var(--gradient-tech);
   height: 2px;
   border: none;
