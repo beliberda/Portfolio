@@ -1,0 +1,40 @@
+.menu-burger {
+}
+#menu-check {
+}
+.menu-label span,
+.menu-label span::after,
+.menu-label span::before {
+  height: 2px;
+  width: 20px;
+  background-color: white;
+  display: block;
+  position: relative;
+}
+.menu-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  height: 20px;
+  z-index: 99;
+  width: 20px;
+}
+.menu-label span::after {
+  top: 5px;
+  content: "";
+}
+.menu-label span::before {
+  top: -8px;
+  content: "";
+}
+.menu-box {
+  display: none;
+  height: 100%;
+  width: 100%;
+  max-width: 375px;
+  background-color: white;
+}
+#menu-check:checked ~ .menu-box {
+  display: block;
+}
