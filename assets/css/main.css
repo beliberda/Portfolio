@@ -2,11 +2,16 @@
 :root {
   --back-main: #0f1624;
   /* Градиентный цвет, используется в нескольких местах */
-  --gradient-tech: linear-gradient(
-    270deg,
-    #13adc7 0%,
-    #6978d1 66.67%,
-    #945dd6 100%
-  );
+  --gradient-tech: linear-gradient(270deg,
+      #13adc7 0%,
+      #6978d1 66.67%,
+      #945dd6 100%);
   --text-main: white;
+}
+
+#top {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+
 }

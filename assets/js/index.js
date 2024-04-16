@@ -25,18 +25,6 @@ projectMass.map((project) => {
 })
 
 
-for (let i = 0; i < projectMass.length; i++) {
-    console.log("Вставили элемент под номером ", i);
-}
-
-
-projectMass.forEach(function (project) {
-    console.log(project.title);
-}
-);
-
-
-
 
 
 // Тут вместо получения по id используем получение через селектор и класс
@@ -77,21 +65,7 @@ let techMass = [
         lvl: 20
     }
 ]
-let lvl = 90
-if (lvl >= 80) {
-    console.log("Senior");
-} else {
-    if (lvl >= 60) {
-        console.log("Middle");
-    }
-    else {
-        if (lvl >= 40) {
-            console.log("Junior");
-        } else {
-            console.log("Стажер");
-        }
-    }
-}
+
 {/* <h3 class="technology-item__level">${item.lvl < 40 ? "Beginner" : item.lvl < 60 ? "Advanced" : "Pro"}</h3> */ }
 techMass.forEach((item) => {
     // Второй способ пройти по массиву объектов через foreach, тоже цикл
@@ -107,6 +81,4 @@ techMass.forEach((item) => {
             </div>
           </li>`)
 })
-
-
 

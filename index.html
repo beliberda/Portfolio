@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Подключаем скрипы -->
     <script defer type="module" src="./assets/js/index.js"></script>
-    <script defer type="module" src="./assets/js/study.js"></script>
     <script defer type="module" src="./assets/js/about.js"></script>
     <!-- Заголовок сайта -->
     <title>Frontend-developer portfolio</title>
   </head>
   <body>
     <!-- Сайт разделяется на 3 части Header Main Footer -->
-    <header class="header">
+    <header id="header" class="header">
       <!-- Здесь в шапке сайта 3 блока, с логотипом, с навигацией, с ссылками -->
       <div class="header-logo">
         <!-- Svg элементы можно вставлять как просто кодом, так и в теге img -->
@@ -28,9 +27,15 @@
       </div>
       <!-- Тег nav семантически нужен для обозначения навигации сайта -->
       <nav class="header-nav">
-        <li class="header-nav__item"><a href="/">Projects</a></li>
-        <li class="header-nav__item"><a href="/">Technologies</a></li>
-        <li class="header-nav__item"><a href="/">About me</a></li>
+        <ul>
+          <li id="projects" class="header-nav__item">
+            <a href=""> Projects</a>
+          </li>
+          <li id="technology" class="header-nav__item">
+            <a href=""> Technologies</a>
+          </li>
+          <li id="about" class="header-nav__item"><a href=""> About me</a></li>
+        </ul>
       </nav>
       <div class="social-link">
         <a href="">
@@ -55,6 +60,10 @@
           />
         </a>
       </div>
+      <input type="checkbox" name="lightmode" id="lightmode" />
+      <label class="lightmode" for="lightmode">
+        <div class="switcher"></div>
+      </label>
     </header>
     <header class="menu-burger">
       <label class="menu-label" for="menu-check"><span></span></label>
@@ -148,5 +157,6 @@
         </a>
       </div>
     </footer>
+    <button id="top">Вверх</button>
   </body>
 </html>
