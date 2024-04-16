@@ -28,6 +28,18 @@
 .project-item:hover {
   box-shadow: 0px 0px 12px 0px #fff;
 }
+.project-item a {
+  background: var(--gradient-tech);
+  height: 40px;
+  border-radius: 83px;
+  border: none;
+  font-size: 16px;
+  color: var(--text-main);
+  padding: 0 40px;
+  /* Свойство, чтобы менялся курсор на указатель */
+  cursor: pointer;
+  transition: 0.3s;
+}
 @media (max-width: 1024px) {
   .projects-list {
     padding: 0;

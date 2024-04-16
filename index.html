@@ -65,7 +65,9 @@
         <div class="switcher"></div>
       </label>
     </header>
+    <!-- Блок для меню в мобильной версии -->
     <header class="menu-burger">
+      <!-- Label нужен для замены чекбокса, чекбос отслежвиает открыто меню или нет -->
       <label class="menu-label" for="menu-check"><span></span></label>
       <input type="checkbox" name="burger" id="menu-check" />
       <div class="menu-box">burger</div>
@@ -88,7 +90,21 @@
         <h1 class="projects__h1">Проекты</h1>
         <!-- Проекты задаются динамически с помощью JavaScript-->
         <!-- Тут задается id для элемента, чтобы к нему было просто обратиться в js, хотя можно и просто с классом -->
-        <ul id="project-list" class="projects-list"></ul>
+        <ul id="project-list" class="projects-list">
+          <li>
+            <article class="project-item">
+              <h2>Проект 1</h2>
+              <img
+                class="project-item__image"
+                src="./assets/images/project.png"
+                alt=""
+              />
+              <hr />
+              <p>текст проекта</p>
+              <a href="#">look it up</a>
+            </article>
+          </li>
+        </ul>
       </section>
       <section class="technology">
         <h1 class="technology-h1">Технологии</h1>
