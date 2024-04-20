@@ -37,6 +37,7 @@
           <li id="about" class="header-nav__item"><a href=""> About me</a></li>
         </ul>
       </nav>
+      <!-- Ссылки на соцсети, иконки можно поставить самим -->
       <div class="social-link">
         <a href="">
           <img
@@ -60,16 +61,20 @@
           />
         </a>
       </div>
+      <!-- это переключатель светлой и темной тем -->
       <input type="checkbox" name="lightmode" id="lightmode" />
+      <!-- label выполняет роль общего блока, внутри него кружок, который будет двигаться при нажатии -->
       <label class="lightmode" for="lightmode">
         <div class="switcher"></div>
       </label>
     </header>
-    <!-- Блок для меню в мобильной версии -->
+    <!-- этот блок отвечает за меню в мобильном варианте -->
     <header class="menu-burger">
-      <!-- Label нужен для замены чекбокса, чекбос отслежвиает открыто меню или нет -->
+      <!-- lablel нужен, чтобы заменить чекбокс, т.к чекбокс сложно стилизовать -->
       <label class="menu-label" for="menu-check"><span></span></label>
+      <!-- если чекбокс отмечен, то меню открыто, если нет, закрыто -->
       <input type="checkbox" name="burger" id="menu-check" />
+      <!-- контейнер для меню -->
       <div class="menu-box">burger</div>
     </header>
     <!-- Главный блок main с контентом разделяется еще на секции с тегами section -->
@@ -146,8 +151,8 @@
     <!-- И последний блок footer, в нем должны быть контактные данные, какие-либо ссылки, лицензия(если есть) -->
     <footer class="footer container">
       <div class="footer-contacts">
-        <a href="tel:+79502866283">+7 (950) 286-62-83</a>
-        <a href="mailto:anton.nurgaliev@mail.ru">anton.nurgaliev@mail.ru</a>
+        <a href="tel:+78005553535">+7 800 555 35 35</a>
+        <a href="mailto:sobaka@mail.ru">sobaka@mail.ru</a>
       </div>
       <div class="social-link">
         <a href="">
@@ -173,6 +178,7 @@
         </a>
       </div>
     </footer>
+    <!-- кнопка для прокрутки наверх -->
     <button id="top">Вверх</button>
   </body>
 </html>

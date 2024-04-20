@@ -1,7 +1,6 @@
-.menu-burger {}
-
-#menu-check {}
-
+/* сам элемент span и псевдоэлементы after и before
+играют роль полосок бургера
+*/
 .menu-label span,
 .menu-label span::after,
 .menu-label span::before {
@@ -12,6 +11,8 @@
   position: relative;
 }
 
+/* label обертка для полосок, чтобы относительно
+него строились полоски*/
 .menu-label {
   display: flex;
   align-items: center;
@@ -23,6 +24,7 @@
   z-index: 99;
   width: 20px;
 }
+
 
 .menu-label span::after {
   top: 5px;
@@ -37,6 +39,7 @@
 .menu-box {
   position: fixed;
   top: 0;
+  /* делаем так, чтобы наш блок уходил за пределы сайта */
   right: -100%;
   height: 100%;
   width: 100%;
@@ -50,6 +53,9 @@
   display: none;
 }
 
+/* если чекбокс отмечен, позиция менюшки меняется на 0
+до этого была -100%
+*/
 #menu-check:checked~.menu-box {
   right: 0;
 }
